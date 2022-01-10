@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+    <header class="myHeader">
+        <h1 id="main-heading" class="top-heading">Age Calculator</h1>
+        <br>
+        <h3 id="sub-heading" class="sub-head">Do you know how old u are?</h3>
+    </header>
+    <main >
+        <div class="mian-container">
+            <form id="age-calculator">
+                <label>Enter Your Date of Birth:-<br>
+                    <input type="date" class="dateOfBirth" id="dob">
+                </label>
+                <br>
+                <label>Enter a date of your choise <br>
+                    <input type="date" class="dateOfBirth" id="comparison-date">
+                </label>
+                <br>
+                <input type="button" class="button" onclick="CalcAge()" value="Calculate">
+                <input type="button" class="button" onclick="resetPage()" value="Reset">
+            </form>
+        </div>
+    </main>
+    <h2 class="ans" id="ans"></h2>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

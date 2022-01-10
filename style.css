@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color : rgb(143, 159, 212);
+}
+.full-page {
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 500px;
+    background-color: rgb(10, 43, 77);;
+    border: solid 8px rgba(86, 124, 161, 0.8);
+}
+.top-heading{
+    color: white;
+}
+.sub-head{
+    color: rgb(166, 191, 204);
+}
+header {
+    grid-row-start: 1;
+    width: 400px;
+    text-align: center;
+    top: 10vh;  
+}
+main{
+    grid-row-start: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    color: rgb(14, 47, 49);
+    background-color: rgb(54, 110, 194);
+    border: solid 3px black;
+    border-radius: 1rem;
+    line-height: 2rem;
+}
+.main-container {
+    flex: 100%;
+}
+.dateOfBirth {
+    margin: 8px 0px 8px 0px;
+    width: 200px;
+    height: 50px;
+    border: solid 2px rgba(13, 39, 41, 0.8);
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.dateOfBirth:focus {
+    outline-color:rgb(21, 51, 53);
+}
+.button {
+    margin: 8px 4px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(201, 199, 199);
+    border: none;
+    color: rgb(1, 7, 19);
+    font-weight: 500;
+}
+.ans{
+    grid-row-start: 3;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+}
+.button:hover{
+    background-color: rgb(188, 202, 207);
+}
