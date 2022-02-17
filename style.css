@@ -4,82 +4,84 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body {
-    background-color : rgb(143, 159, 212);
+body{
+background-color: rgb(240,248,255);
 }
-.full-page {
-    display: grid;
+.bg{
+    display:grid; 
     grid-template-rows: 25% 50% 25%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: auto;
     height: 100vh;
     width: 500px;
-    background-color: rgb(10, 43, 77);;
-    border: solid 8px rgba(86, 124, 161, 0.8);
+    background-color: #000;
+    border: solid 10px rgba(215, 228, 240, 0.9);
 }
-.top-heading{
-    color: white;
+.light{
+    color:#fff;
 }
-.sub-head{
-    color: rgb(166, 191, 204);
+.accent{
+   color: rgb(240,248,255);
 }
-header {
-    grid-row-start: 1;
-    width: 400px;
-    text-align: center;
-    top: 10vh;  
+header{
+   grid-row-start: 1;
+   text-align: center;
+
 }
 main{
     grid-row-start: 2;
-    text-align: center;
-    display: flex;
-    align-items: center;
+    text-align:center;
+    display: flex; 
     justify-content: center;
-    padding: 20px;
-    width: 400px;
+    align-items: center;
+    padding:20px;
+    width:400px;
     height: 400px;
-    color: rgb(14, 47, 49);
-    background-color: rgb(54, 110, 194);
-    border: solid 3px black;
+    color: grey;
+    background-color: rgb(240,248,255);
+    box-shadow: 0 0 8px  #ffffff;  
     border-radius: 1rem;
-    line-height: 2rem;
+    line-height: 2em;
 }
-.main-container {
-    flex: 100%;
+.main-container{
+   flex:100%;
 }
-.dateOfBirth {
-    margin: 8px 0px 8px 0px;
+.dates{
     width: 200px;
     height: 50px;
-    border: solid 2px rgba(13, 39, 41, 0.8);
+    border:solid 2px rgba(215, 228, 240, 0.8);
     text-align: center;
     font-weight: bold;
     font-size: large;
     text-transform: uppercase;
-    border-radius: 5px;
+    color: rgba(176, 190, 202, 0.979);;
 }
-.dateOfBirth:focus {
-    outline-color:rgb(21, 51, 53);
+.dates:focus{
+    outline-color: rgb(188, 199, 209);
 }
-.button {
-    margin: 8px 4px;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: rgb(201, 199, 199);
-    border: none;
-    color: rgb(1, 7, 19);
-    font-weight: 500;
-}
-.ans{
-    grid-row-start: 3;
+.result{
+    grid-row-start:3;
     text-align: center;
     font-size: medium;
     font-weight: 500;
-    color: white;
+    color: #fff;
+}
+.button{
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color:  rgba(176, 190, 202, 0.979);
+    border: none;
+    color:white;
+    font-weight:500;
+    cursor: pointer;
 }
 .button:hover{
-    background-color: rgb(188, 202, 207);
+    background-color:  rgba(176, 190, 202, 0.418);
+}
+#footer{
+    position: absolute;
+    bottom: 20px;
+    justify-content: center;
 }

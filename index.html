@@ -8,32 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="full-page">
-    <header class="myHeader">
-        <h1 id="main-heading" class="top-heading">Age Calculator</h1>
-        <br>
-        <h3 id="sub-heading" class="sub-head">Do you know how old u are?</h3>
+    <div class="bg">
+    <header>
+        <h1 id="main-heading"class="accent">AGE CALCULATOR</h1>
+        <h3 id="demo"class="light">Want to know how old you are?</h3>
     </header>
-    <main >
-        <div class="mian-container">
-            <form id="age-calculator">
-                <label>Enter Your Date of Birth:-<br>
-                    <input type="date" class="dateOfBirth" id="dob">
-                </label>
-                <br>
-                <label>Enter a date of your choise <br>
-                    <input type="date" class="dateOfBirth" id="comparison-date">
-                </label>
-                <br>
-                <input type="button" class="button" onclick="CalcAge()" value="Calculate">
-                <input type="button" class="button" onclick="resetPage()" value="Reset">
+    <main>
+       
+        <div class="main-container">
+            <form id="ageCalc">
+                <label for="dob">Enter Your Date of Birth</label><br>
+                <input type="date"class="dates"id="dob"onchange="minimum()"><br>
+                <label >Age till the Date</label><br>
+                <input type="date"class="dates"id="date"><br>
+                <br>               
+                <input type="button"class="button" onclick="calculateAge()"value="Calculate">
+                <input type="button"class="button" onclick="resetPage()"value="Reset">
             </form>
-        </div>
+           </div>
     </main>
-    <h2 class="ans" id="ans"></h2>
-    </div>
+    <h2 class="result" id="result"></h2>
+</div>
 
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
 </body>
+
+    
 </html>
